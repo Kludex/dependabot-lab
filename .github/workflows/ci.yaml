@@ -1,13 +1,10 @@
-name: auto-merge
-
-on:
-  pull_request:
+name: CI
+on: [push, pull_request]
 
 jobs:
-  auto-merge:
+  automerge:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - uses: fastify/github-action-merge-dependabot@v2.1.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,5 @@
 uvicorn==0.15.0
 fastapi==0.70.0
-httpx==0.20.0
+httpx==0.21.0
 pytest==6.2.5
 rich==10.13.0
